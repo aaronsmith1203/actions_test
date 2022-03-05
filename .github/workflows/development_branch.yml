@@ -3,8 +3,6 @@
 
 name: Pull to Development - Run Tests
 
-# adding a line
-
 on:
   pull_request:
     branches: [ development ]
