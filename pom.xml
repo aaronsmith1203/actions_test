@@ -32,7 +32,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.aaronsmith.qa.challenges.goldilocks</mainClass>
+							<mainClass>com.aaronsmith.qa.challenges.goldilocks.Goldilocks</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

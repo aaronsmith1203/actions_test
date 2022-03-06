@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Goldilocks {
 
+	public static void main(String[] args) {
+		System.out.println("Hello");
+	}
+	
 	public static ArrayList<Integer> getComfortableChairs(int weight, int maxTemperature, int[] chairCapacities, int[] porridgeTemperatures) {
 		ArrayList<Integer> comfortableChairs = new ArrayList<Integer>();
 		for (int i = 0; i < chairCapacities.length; i++) {
