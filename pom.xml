@@ -7,6 +7,13 @@
 		<maven.compiler.source>14</maven.compiler.source>
 		<maven.compiler.target>14</maven.compiler.target>
 	</properties>
+	<distributionManagement>
+		<repository>
+		  <id>github</id>
+		  <name>GitHub aaronsmith1203 Apache Maven Packages</name>
+		  <url>https://maven.pkg.github.com/aaronsmith1203/actions_test</url>
+		</repository>
+	 </distributionManagement>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 		<dependency>
@@ -16,4 +23,20 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.aaronsmith.qa.challenges.goldilocks.Goldilocks</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
